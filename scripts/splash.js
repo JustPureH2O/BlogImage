@@ -11,7 +11,7 @@
         "水晶宫里奏《霓裳》，准拟岳阳楼上",
         "暑假黄金周，寒假变双休"
     ];
-    var ele = document.getElementById("justpureh2o-splash");
+    var ele = document.getElementById("subtitle");
     if (ele && !ele.innerText) {
         ele.innerText = arr[Math.floor(Math.random() * arr.length)];
     }
