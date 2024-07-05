@@ -15,4 +15,5 @@
     if (ele && !ele.innerText) {
         ele.innerText = arr[Math.floor(Math.random() * arr.length)];
     }
+    return true;
 }(window));
