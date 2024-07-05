@@ -8,7 +8,7 @@ Write-Host ""
 $crack_type = Read-Host "$([char]0x8f93)$([char]0x5165)$([char]0x7834)$([char]0x89e3)$([char]0x547d)$([char]0x4ee4)$([char]0xff08)$([char]0x673a)$([char]0x623f)$([char]0x7ba1)$([char]0x7406)$([char]0x52a9)$([char]0x624b): 1; $([char]0x6781)$([char]0x57df): 2; $([char]0x6302)$([char]0x8d77): 3; $([char]0x89e3)$([char]0x6302): 4; $([char]0x9000)$([char]0x51fa): $([char]0x5176)$([char]0x4ed6)$([char]0xff09)"
 
 if (1 -eq $crack_type) {
-Invoke-WebRequest -Uri "https://justpureh2o.cn/store/jfglzs.inf" -OutFile "jfglzs.inf"
+Invoke-WebRequest -Uri "https://img.justpureh2o.cn/scripts/jfglzs.inf" -OutFile "jfglzs.inf"
 cmd /c "InfDefaultInstall ./jfglzs.inf"
 $key_tskk = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\"
 $name_tskk = "taskkill.exe"
@@ -44,7 +44,7 @@ Write-Host -ForegroundColor Green "$([char]0x89e3)$([char]0x9501) $([char]0x7ec4
 }
 Write-Host -ForegroundColor Green "$([char]0x64cd)$([char]0x4f5c)$([char]0x6210)$([char]0x529f)$([char]0x5b8c)$([char]0x6210)!"
 } elseif (2 -eq $crack_type) {
-Invoke-WebRequest -Uri "https://justpureh2o.cn/store/ClassX.bat" -OutFile "ClassX.bat"
+Invoke-WebRequest -Uri "https://img.justpureh2o.cn/scripts/ClassX.bat" -OutFile "ClassX.bat"
 cmd /c "ClassX.bat" -ErrorAction SilentlyContinue
 cmd /c "./ClassX.bat" -ErrorAction SilentlyContinue
 Write-Host -ForegroundColor Green "$([char]0x64cd)$([char]0x4f5c)$([char]0x6210)$([char]0x529f)$([char]0x5b8c)$([char]0x6210)!"
