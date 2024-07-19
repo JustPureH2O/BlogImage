@@ -1,10 +1,21 @@
+; Latest update at 2024-7-18
+
 [Version]
 Signature="$CHICAGO$"
-Provider=justpureh2o@outlook.com, 2023
+Provider=justpureh2o@outlook.com, 2024
 
 [DefaultInstall]
 DelReg=Delete
 AddReg=Add
+
+[Delete] ; 更新 2024.7.18 解决断网小游戏限制（Edge）
+HKLM,"SOFTWARE\Policies\Microsoft\Edge","AllowSurfGame"
+
+[Delete] ; 更新 2024.7.15 解决win+r弹出运行菜单限制
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Policies\Explorer","NoRun"
+
+[Add] ; 更新 2024.7.15 解决命令行锁定问题
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System","EnableLUA",1,00,00,00,00
 
 [Delete] ; 你以为只有你会劫持？
 HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskkill.exe","debugger"
