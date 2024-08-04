@@ -19,19 +19,22 @@
     height: auto;
 }
 
-.bubbleBorderBright {
+.bubbleBorder {
     width: inherit;
     height: fit-content;
     border-radius: 10px;
-    background-color: #ffefcf;
     margin-bottom: 20px;
 }
 
-.bubbleTextBright {
+.bubbleText {
     width: 230px;
     height: fit-content;
     margin: 10px;
     word-wrap: break-word;
     word-break: break-all;
     overflow: hidden;
+}
+
+.parallax-window {
+    z-index: -1;
 }
