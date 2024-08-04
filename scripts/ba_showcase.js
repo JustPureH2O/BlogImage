@@ -47,7 +47,7 @@ if (window.innerWidth / window.innerHeight > 1) {
 
             let floatBubble = document.createElement("div");
             floatBubble.className = "bubbleBorder";
-            floatBubble.style.backgroundColor = (volantis !== undefined && volantis.dark.mode === 'light') ? "#ffefcf" : "#343434";
+            floatBubble.style.backgroundColor = (volantis.dark.mode === 'light') ? "#e6e6e6" : "#343434";
             div.appendChild(floatBubble);
 
             let bubbleText = document.createElement("div");
@@ -80,6 +80,15 @@ if (window.innerWidth / window.innerHeight > 1) {
                 setTimeout(() => {
                     cooldown = false;
                 }, 1000);
+            });
+            volantis.dark.push(function () {
+                if (volantis.dark.mode === 'light') {
+                    floatBubble.style.backgroundColor = "#e6e6e6";
+                    bubbleText.style.color = "#000000";
+                } else {
+                    floatBubble.style.backgroundColor = "#343434";
+                    bubbleText.style.color = "#ffffff";
+                }
             });
         });
     }
