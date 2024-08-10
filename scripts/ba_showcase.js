@@ -47,7 +47,8 @@ if (window.innerWidth / window.innerHeight > 1) {
 
             let floatBubble = document.createElement("div");
             floatBubble.className = "bubbleBorder";
-            floatBubble.style.backgroundColor = (volantis.dark.mode === 'light') ? "e6e6e6" : "#343434";
+            if (volantis.dark.mode === 'light') floatBubble.style.backgroundColor = "e6e6e6";
+            else floatBubble.style.backgroundColor = "343434";
             div.appendChild(floatBubble);
 
             let bubbleText = document.createElement("div");
