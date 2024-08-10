@@ -36,7 +36,7 @@ const students = [
     {name: "aris", img: 6, init: "新游戏即将贩售，Sensei 也会一起玩吧！", startup: 0, sentences: [{id: 1, prompt: "爱丽丝不吃电池……"}, {id: 2, prompt: "爱丽丝已经准备好和 Sensei 一起冒险了！"}, {id: 3, prompt: "爱丽丝来帮您打扫博客啦"}, {id: 4, prompt: "诶诶？爱丽丝不是打扫机器人！", animation: "shake"}, {id: 5, prompt: "Sensei，不听话是不好的呦~"}]}
 ];
 let arr = [];
-let chache = [];
+let cache = [];
 if (window.innerWidth / window.innerHeight > 1) {
     if (parent !== null) {
         let seed = (date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate()) * 7 % students.length;
