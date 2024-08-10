@@ -35,7 +35,7 @@ const students = [
 let arr = [];
 if (window.innerWidth / window.innerHeight > 1) {
     if (parent !== null) {
-        let seed = (date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate()) * 4 % students.length;
+        let seed = (date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate()) * 7 % students.length;
         if (param.get('student') !== null && param.get('student') < students.length) seed = parseInt(param.get('student'));
 
         preload(seed).then(() => {
