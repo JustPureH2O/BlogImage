@@ -63,6 +63,7 @@ if (window.innerWidth / window.innerHeight > 1) {
             let img = document.createElement("img");
             img.src = `https://img.justpureh2o.cn/image/${students[seed].name}/${students[seed].name}${students[seed].startup}.png`;
             img.className = "ba_characters";
+            img.style.height = (0.4 * window.innerHeight).toString();
             div.appendChild(img);
 
             let cooldown = false;
@@ -97,4 +98,3 @@ if (window.innerWidth / window.innerHeight > 1) {
         });
     }
 }
-
