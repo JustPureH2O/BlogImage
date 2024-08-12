@@ -63,11 +63,11 @@ if (window.innerWidth / window.innerHeight > 1) {
             let img = document.createElement("img");
             img.src = `https://img.justpureh2o.cn/image/${students[seed].name}/${students[seed].name}${students[seed].startup}.png`;
             img.className = "ba_characters";
-            img.style.height = (0.3 * window.innerHeight).toString();
             div.appendChild(img);
 
             let cooldown = false;
             let last = -1;
+            img.style.height = "500px";
             img.addEventListener("click", function () {
                 if (!cooldown && arr.length) {
                     let x = parseInt(Math.random() * students[seed].sentences.length % students[seed].sentences.length);
