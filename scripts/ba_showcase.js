@@ -67,8 +67,7 @@ if (window.innerWidth / window.innerHeight > 1) {
 
             let cooldown = false;
             let last = -1;
-            img.style.height = "500px";
-            img.style.width = "auto";
+            img.style.width = "200px";
             img.addEventListener("click", function () {
                 if (!cooldown && arr.length) {
                     let x = parseInt(Math.random() * students[seed].sentences.length % students[seed].sentences.length);
