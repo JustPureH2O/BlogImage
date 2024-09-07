@@ -10,7 +10,11 @@
     position: fixed;
     bottom: 1%;
     left: 1%;
-    width: 250px;
+    width: 15vw;
+}
+
+.ba_characters {
+    width: inherit;
 }
 
 .bubbleBorder {
@@ -21,7 +25,7 @@
 }
 
 .bubbleText {
-    width: 230px;
+    width: 15vw;
     height: fit-content;
     margin: 10px;
     word-wrap: break-word;
