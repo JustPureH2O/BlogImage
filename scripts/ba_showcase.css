@@ -7,14 +7,16 @@
 }
 
 .ba_showcase {
+    max-width: 15vw;
     position: fixed;
     bottom: 1%;
     left: 1%;
-    width: 15vw;
 }
 
 .ba_characters {
     width: inherit;
+    max-width: 15vw;
+    max-height: 45vh;
 }
 
 .bubbleBorder {
@@ -25,7 +27,7 @@
 }
 
 .bubbleText {
-    width: 15vw;
+    max-width: 15vw;
     height: fit-content;
     margin: 10px;
     word-wrap: break-word;
