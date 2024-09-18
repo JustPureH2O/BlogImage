@@ -1,4 +1,4 @@
-const date = new Date();
+const today = new Date();
 
 let mourn = isTheDate(12, 13) || isTheDate(5, 12) || isTheDate(9, 18);
 if (mourn) {
@@ -6,5 +6,5 @@ if (mourn) {
 }
 
 function isTheDate(month, date) {
-    return date.getDate() === date && date.getMonth() === month;
+    return today.getDate() === date && today.getMonth() === month;
 }
