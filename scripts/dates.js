@@ -8,6 +8,6 @@
     }
     
     function isTheDate(month, date) {
-        return today.getDate() === date && today.getMonth() === month;
+        return today.getDate() === date && today.getMonth() + 1 === month;
     }
 })();
