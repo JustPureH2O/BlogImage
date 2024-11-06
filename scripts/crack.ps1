@@ -1,4 +1,4 @@
-$current_version = "2024.7.19"
+$current_version = "2024.11.06"
 
 Write-Host "$([char]0x673a)$([char]0x623f)$([char]0x7ba1)$([char]0x7406)$([char]0x6740)$([char]0x624b) $([char]0x5728)$([char]0x7ebf)$([char]0x7248) Patch $current_version"
 Write-Host "$([char]0x4f5c)$([char]0x8005): JustPureH$([char]0x2082)O"
@@ -37,8 +37,8 @@ if (1 -eq $crack_type) {
 	} else {
 		Write-Host -ForegroundColor Green "$([char]0x89e3)$([char]0x9501) $([char]0x6ce8)$([char]0x518c)$([char]0x8868)$([char]0x7ba1)$([char]0x7406)$([char]0x5668) $([char]0x6210)$([char]0x529f)"		
 	}
-    $key_mmc = "HKEY_CURRENT_USER\Software\Policies\Microsoft\MMC\{8FC0B734-A0E1-11D1-A7D30000F87571E3}\"
-    $name_mmc = "Restrict_Run"
+    $key_mmc = "HKEY_CURRENT_USER\Software\Policies\Microsoft\MMC\"
+    $name_mmc = "RestrictToPermittedSnapins"
 	$res_mmc = (Get-ItemProperty -Path "Registry::$key_mmc" -ErrorAction SilentlyContinue).$Name
 	if (0 -lt $res_mmc) {
 		Write-Host -ForegroundColor Red "$([char]0x89e3)$([char]0x9501) $([char]0x7ec4)$([char]0x7b56)$([char]0x7565)$([char]0x7ba1)$([char]0x7406)$([char]0x5668) $([char]0x5931)$([char]0x8d25)"
@@ -54,7 +54,7 @@ if (1 -eq $crack_type) {
 } elseif (3 -eq $crack_type) {
 	$suspend_exe_exist = $(Test-Path "./pssuspend64.exe") -or $(Test-Path "pssuspend64.exe")
 	if (!$suspend_exe_exist) {
-		Invoke-WebRequest -Uri "https://img.justpureh2o.cn/scripts/pssuspend64.exe" -OutFile "pssuspend64.exe"
+		Invoke-WebRequest -Uri "https://justpureh2o.cn/store/pssuspend64.exe" -OutFile "pssuspend64.exe"
 	}
 	$jfglzs_process = Get-Process -Name "jfglzs" -ErrorAction SilentlyContinue
 	if ($jfglzs_process -eq $null) {
@@ -66,7 +66,7 @@ if (1 -eq $crack_type) {
 } elseif (4 -eq $crack_type) {
 	$suspend_exe_exist = $(Test-Path "./pssuspend64.exe") -or $(Test-Path "pssuspend64.exe")
 	if (!$suspend_exe_exist) {
-		Invoke-WebRequest -Uri "https://img.justpureh2o.cn/scripts/pssuspend64.exe" -OutFile "pssuspend64.exe"
+		Invoke-WebRequest -Uri "https://justpureh2o.cn/store/pssuspend64.exe" -OutFile "pssuspend64.exe"
 	}
 	$jfglzs_process = Get-Process -Name "jfglzs" -ErrorAction SilentlyContinue
 	if ($jfglzs_process -eq $null) {
@@ -79,3 +79,4 @@ if (1 -eq $crack_type) {
     Write-Host "$([char]0x9000)$([char]0x51fa)..."
     exit
 }
+pause
