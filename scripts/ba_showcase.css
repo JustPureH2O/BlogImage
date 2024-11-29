@@ -7,6 +7,9 @@
 }
 
 .ba_showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 15vw;
     position: fixed;
     bottom: 1%;
@@ -14,6 +17,7 @@
 }
 
 .ba_characters {
+    user-select: none;
     width: inherit;
     max-width: 15vw;
     max-height: 45vh;
@@ -33,4 +37,4 @@
     word-wrap: break-word;
     word-break: break-all;
     overflow: hidden;
-}
+} 
