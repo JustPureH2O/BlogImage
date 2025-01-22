@@ -23,6 +23,7 @@ async function preload(idx) {
 }
 
 const parent = document.getElementById("l_body");
+const reference = document.getElementById("l_main");
 const date = new Date();
 const param = new URLSearchParams(window.location.search);
 const students = [
@@ -37,7 +38,7 @@ const students = [
 ];
 let arr = [];
 let cache = [];
-if (window.innerWidth / window.innerHeight > 1) {
+if (window.innerWidth / window.innerHeight > 1 && window.innerWidth * 0.17 < reference.offsetParent.offsetLeft) {
     if (parent !== null) {
         let seed = (date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate()) * 7 % students.length;
         if (param.get('student') !== null && param.get('student') < students.length) seed = parseInt(param.get('student'));
