@@ -68,7 +68,7 @@ if (window.innerWidth / window.innerHeight > 1 && window.innerWidth * 0.17 < ref
 
             addEventListener("resize", function () {
                 if (window.innerWidth * 0.17 > reference.offsetParent.offsetLeft) {
-                    div.style.opacity = "0;
+                    div.style.opacity = "0";
                 } else {
                     div.style.opacity = "1";
                 }
