@@ -66,7 +66,7 @@ if (window.innerWidth / window.innerHeight > 1 && window.innerWidth * 0.17 < ref
             img.className = "ba_characters";
             div.appendChild(img);
 
-            div.addEventListener("resize", function () {
+            addEventListener("resize", function () {
                 console.log("Changed in size!");
                 if (window.innerWidth * 0.17 < reference.offsetParent.offsetLeft) {
                     div.style.opacity = `${Math.max(1, 0.085 * window.innerWidth / reference.offsetParent.offsetLeft)}`;
