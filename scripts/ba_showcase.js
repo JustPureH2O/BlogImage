@@ -50,12 +50,6 @@ if (window.innerWidth / window.innerHeight > 1 && window.innerWidth * 0.17 < ref
             div.className = "ba_showcase";
             parent.appendChild(div);
 
-            div.addEventListener("resize", () => {
-                if (window.innerWidth * 0.17 < reference.offsetParent.offsetLeft) {
-                    div.style.opacity = `${0.085 * window.innerWidth / reference.offsetParent.offsetLeft}`;
-                }
-            });
-
             let floatBubble = document.createElement("div");
             floatBubble.className = "bubbleBorder";
             if (volantis.dark.mode === 'light') floatBubble.style.backgroundColor = "e6e6e6";
@@ -71,6 +65,12 @@ if (window.innerWidth / window.innerHeight > 1 && window.innerWidth * 0.17 < ref
             img.src = `https://img.justpureh2o.cn/image/${students[seed].name}/${students[seed].name}${students[seed].startup}.png`;
             img.className = "ba_characters";
             div.appendChild(img);
+
+            div.addEventListener("resize", () => {
+                if (window.innerWidth * 0.17 < reference.offsetParent.offsetLeft) {
+                    div.style.opacity = `${0.085 * window.innerWidth / reference.offsetParent.offsetLeft}`;
+                }
+            });
 
             let cooldown = false;
             let last = -1;
