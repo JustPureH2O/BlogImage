@@ -14,6 +14,7 @@
     position: fixed;
     bottom: 1%;
     left: 1%;
+    z-index: -101;
 }
 
 .ba_characters {
