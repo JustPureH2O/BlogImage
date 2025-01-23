@@ -42,6 +42,6 @@
 
 @media print {
     .ba_showcase {
-        visibility: 0;
+        visibility: hidden;
     }
 }
