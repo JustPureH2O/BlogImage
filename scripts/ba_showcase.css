@@ -39,3 +39,9 @@
     word-break: break-all;
     overflow: hidden;
 } 
+
+@media print {
+    .ba_showcase {
+        visibility: 0;
+    }
+}
