@@ -15,7 +15,7 @@
     bottom: 1%;
     left: 1%;
     transition: opacity ease .2s;
-    z-index: -9999;
+    z-index: -999;
 }
 
 .ba_characters {
