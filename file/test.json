@@ -96,7 +96,7 @@
     {
       "MessageCN": "没事，就是来问你个小~问~题",
       "MessageGroupId": 100000040,
-      "Id": 335,
+      "Id": 333,
       "CharacterId": 1,
       "MessageCondition": "Feedback",
       "ConditionValue": 0,
@@ -111,7 +111,7 @@
     {
       "MessageCN": "这个1,3-丁二烯，他的共线面情况是怎样的？",
       "MessageGroupId": 100000050,
-      "Id": 337,
+      "Id": 335,
       "CharacterId": 1,
       "MessageCondition": "Feedback",
       "ConditionValue": 0,
@@ -126,7 +126,7 @@
     {
       "MessageCN": "额……",
       "MessageGroupId": 100000060,
-      "Id": 330,
+      "Id": 336,
       "CharacterId": 1,
       "MessageCondition": "Answer",
       "ConditionValue": 0,
@@ -141,7 +141,7 @@
     {
       "MessageCN": "最多是四个碳原子共面吧……",
       "MessageGroupId": 100000060,
-      "Id": 331,
+      "Id": 337,
       "CharacterId": 1,
       "MessageCondition": "Answer",
       "ConditionValue": 0,
