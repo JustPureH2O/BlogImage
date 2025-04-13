@@ -42,7 +42,7 @@
       "MessageTW": "老師。你之前幫忙的委託，又再次解決了唷",
       "MessageGroupId": 100000010,
       "Id": 327,
-      "CharacterId": 1,
+      "CharacterId": 20039,
       "MessageCondition": "FavorRankUp",
       "ConditionValue": 2,
       "PreConditionGroupId": 0,
