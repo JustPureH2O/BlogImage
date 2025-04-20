@@ -1,0 +1,170 @@
+{
+  "CharacterId": 1,
+  "custom": [
+    {
+      "CharacterId": 1,
+      "TextCn": "葛军老师",
+      "Avatar": "https://img.justpureh2o.cn/image/gejun.png"
+    }
+  ],
+  "title": [
+    {
+      "TextCn": "洛不达，洛必错",
+      "GroupId": 1000002,
+      "FavorScheduleId": 100002,
+      "CharacterId": 1
+    }
+  ],
+  "content": [
+    {
+      "MessageCN": "诶~同学",
+      "MessageGroupId": 100000010,
+      "Id": 327,
+      "CharacterId": 1,
+      "MessageCondition": "FavorRankUp",
+      "ConditionValue": 2,
+      "PreConditionGroupId": 0,
+      "PreConditionFavorScheduleId": 0,
+      "FavorScheduleId": 0,
+      "NextGroupId": 100000020,
+      "FeedbackTimeMillisec": 0,
+      "MessageType": "Text",
+      "ImagePath": ""
+    },
+    {
+      "MessageCN": "这种分式型的导数大题，你会做么？",
+      "MessageGroupId": 100000010,
+      "Id": 328,
+      "CharacterId": 1,
+      "MessageCondition": "Feedback",
+      "ConditionValue": 0,
+      "PreConditionGroupId": 0,
+      "PreConditionFavorScheduleId": 0,
+      "FavorScheduleId": 0,
+      "NextGroupId": 100000020,
+      "FeedbackTimeMillisec": 1500,
+      "MessageType": "Text",
+      "ImagePath": ""
+    },    
+    {
+      "MessageCN": "一个字，洛！",
+      "MessageGroupId": 100000020,
+      "Id": 330,
+      "CharacterId": 1,
+      "MessageCondition": "Answer",
+      "ConditionValue": 0,
+      "PreConditionGroupId": 0,
+      "PreConditionFavorScheduleId": 0,
+      "FavorScheduleId": 0,
+      "NextGroupId": 100000030,
+      "FeedbackTimeMillisec": 0,
+      "MessageType": "Text",
+      "ImagePath": ""
+    },
+    {
+      "MessageCN": "那当然是……洛必达！",
+      "MessageGroupId": 100000020,
+      "Id": 331,
+      "CharacterId": 1,
+      "MessageCondition": "Answer",
+      "ConditionValue": 0,
+      "PreConditionGroupId": 0,
+      "PreConditionFavorScheduleId": 0,
+      "FavorScheduleId": 0,
+      "NextGroupId": 100000030,
+      "FeedbackTimeMillisec": 0,
+      "MessageType": "Text",
+      "ImagePath": ""
+    },
+    {
+      "MessageCN": "？",
+      "MessageGroupId": 100000030,
+      "Id": 332,
+      "CharacterId": 1,
+      "MessageCondition": "Feedback",
+      "ConditionValue": 0,
+      "PreConditionGroupId": 0,
+      "PreConditionFavorScheduleId": 0,
+      "FavorScheduleId": 0,
+      "NextGroupId": 100000050,
+      "FeedbackTimeMillisec": 500,
+      "MessageType": "Text",
+      "ImagePath": ""
+    },
+    {
+      "MessageCN": "洛必达？那是高中内容吗？！",
+      "MessageGroupId": 100000050,
+      "Id": 335,
+      "CharacterId": 1,
+      "MessageCondition": "Feedback",
+      "ConditionValue": 0,
+      "PreConditionGroupId": 0,
+      "PreConditionFavorScheduleId": 0,
+      "FavorScheduleId": 0,
+      "NextGroupId": 100000060,
+      "FeedbackTimeMillisec": 1000,
+      "MessageType": "Text",
+      "ImagePath": ""
+    },
+    {
+      "MessageCN": "不会洛，不成活！",
+      "MessageGroupId": 100000060,
+      "Id": 336,
+      "CharacterId": 1,
+      "MessageCondition": "Answer",
+      "ConditionValue": 0,
+      "PreConditionGroupId": 0,
+      "PreConditionFavorScheduleId": 0,
+      "FavorScheduleId": 0,
+      "NextGroupId": 100000070,
+      "FeedbackTimeMillisec": 0,
+      "MessageType": "Text",
+      "ImagePath": ""
+    },
+    {
+      "MessageCN": "……总之我还是要洛！",
+      "MessageGroupId": 100000060,
+      "Id": 337,
+      "CharacterId": 1,
+      "MessageCondition": "Answer",
+      "ConditionValue": 0,
+      "PreConditionGroupId": 0,
+      "PreConditionFavorScheduleId": 0,
+      "FavorScheduleId": 0,
+      "NextGroupId": 100000070,
+      "FeedbackTimeMillisec": 0,
+      "MessageType": "Text",
+      "ImagePath": ""
+    },
+    {
+      "MessageCN": "现在的学生，一言不合就洛必达",
+      "MessageGroupId": 100000070,
+      "Id": 338,
+      "CharacterId": 1,
+      "MessageCondition": "Feedback",
+      "ConditionValue": 0,
+      "PreConditionGroupId": 0,
+      "PreConditionFavorScheduleId": 0,
+      "FavorScheduleId": 0,
+      "NextGroupId": 100000080,
+      "FeedbackTimeMillisec": 1500,
+      "MessageType": "Text",
+      "ImagePath": ""
+    },
+    {
+      "MessageCN": "我有一百种方法，让你洛不达、洛必错",
+      "MessageGroupId": 100000080,
+      "Id": 339,
+      "CharacterId": 1,
+      "MessageCondition": "Feedback",
+      "ConditionValue": 0,
+      "PreConditionGroupId": 0,
+      "PreConditionFavorScheduleId": 0,
+      "FavorScheduleId": 100002,
+      "NextGroupId": 100000090,
+      "FeedbackTimeMillisec": 1500,
+      "MessageType": "Text",
+      "ImagePath": ""
+    }
+  ]
+}
